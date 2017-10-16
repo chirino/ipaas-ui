@@ -9,6 +9,7 @@
     "copy:assets": "yarn ncp node_modules/syndesis.data.mapper/src/assets/dm src/assets/dm",
     "start": "yarn ng serve -- --ssl true --ssl-key localhost.key --ssl-cert localhost.crt --proxy-config proxy.conf.js",
     "start:prod": "yarn ng serve -- --ssl true --ssl-key localhost.key --ssl-cert localhost.crt --proxy-config proxy.conf.js --aot --prod",
+    "start:dev-minishift": "yarn ng serve -- --host 0.0.0.0 --disable-host-check",
     "lint": "yarn ng lint",
     "lint:fix": "yarn ng lint -- --fix",
     "test": "yarn ng test",
@@ -54,7 +55,7 @@
     "zone.js": "0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.3",
+    "@angular/cli": "1.4.7",
     "@angular/compiler-cli": "4.1.2",
     "@compodoc/compodoc": "^1.0.0-beta.14",
     "@types/chai-as-promised": "^0.0.29",
